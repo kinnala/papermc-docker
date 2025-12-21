@@ -5,7 +5,6 @@ FROM alpine:latest
 
 # Environment variables
 ENV MC_VERSION="1.21.8" \
-    PAPER_BUILD="60" \
     EULA="false" \
     MC_RAM="4G" \
     JAVA_OPTS=""
@@ -15,7 +14,7 @@ RUN apk update \
     && apk add libstdc++ \
     && apk add openjdk21-jre \
     && apk add bash \
-    && apk add wget \
+    && apk add curl \
     && apk add jq \
     && mkdir /papermc \
     && mkdir /papermc/plugins

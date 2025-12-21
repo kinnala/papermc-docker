@@ -1,4 +1,10 @@
-# PaperMC Docker
+# Running
+
+```docker build -t papermc .```
+```docker container run -it -e EULA="true" -p 25565:25565 papermc```
+
+# Old docs from the original repo
+
 This is a Linux Docker image for the PaperMC Minecraft server.
 
 PaperMC is an optimized Minecraft server with plugin support (Bukkit, Spigot, Sponge, etc.).

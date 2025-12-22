@@ -19,6 +19,8 @@ RUN apk update \
     && mkdir /papermc \
     && mkdir /papermc/plugins
 
+COPY server.properties /papermc
+
 # Add plugins
 ADD https://github.com/EssentialsX/Essentials/releases/download/2.21.2/EssentialsX-2.21.2.jar /papermc/plugins/EssentialsX.jar
 ADD https://download.luckperms.net/1610/bukkit/loader/LuckPerms-Bukkit-5.5.21.jar /papermc/plugins/LuckPerms.jar

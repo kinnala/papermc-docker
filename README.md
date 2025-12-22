@@ -10,7 +10,7 @@
 
 ## Launch the container
 
-```docker container run -it -v $PWD/world:/papermc/world -e EULA="true" -p 25565:25565 papermc```
+```docker container run -it -v $PWD/data:/papermc/world -e EULA="true" -p 25565:25565 papermc```
 
 # Old docs from the original repo
 

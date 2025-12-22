@@ -27,7 +27,7 @@ ADD https://hangarcdn.papermc.io/plugins/EngineHub/WorldEdit/versions/7.3.17/PAP
 ADD https://hangarcdn.papermc.io/plugins/ViaVersion/ViaVersion/versions/5.6.0/PAPER/ViaVersion-5.6.0.jar /papermc/plugins/ViaVersion.jar
 ADD https://hangarcdn.papermc.io/plugins/Multiverse/Multiverse-Core/versions/5.4.0/PAPER/multiverse-core-5.4.0.jar /papermc/plugins/multiverse-core.jar
 ADD https://hangarcdn.papermc.io/plugins/Oliver/FancyNpcs/versions/2.8.0/PAPER/FancyNpcs-2.8.0.jar /papermc/plugins/FancyNpcs.jar
-ADD https://dev.bukkit.org/projects/worldguard/files/6643567/download /papermc/plugins/WorldGuard.jar
+ADD https://cdn.modrinth.com/data/DKY9btbd/versions/PO4MKx7e/worldguard-bukkit-7.0.14-dist.jar /papermc/plugins/worldguard.jar
 
 # Start script
 CMD ["bash", "./papermc.sh"]

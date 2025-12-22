@@ -4,13 +4,9 @@
 
 ```docker build -t papermc .```
 
-## Create directory for saving world data
-
-```mkdir data```
-
 ## Launch the container
 
-```docker container run -it -v $PWD/data:/papermc/world -e EULA="true" -p 25565:25565 papermc```
+```docker container run -it -v $PWD/worlds:/papermc/worlds -e EULA="true" -p 25565:25565 papermc```
 
 # Old docs from the original repo
 

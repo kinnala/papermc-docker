@@ -1,6 +1,3 @@
-# We're no longer using openjdk:17-slim as a base due to several unpatched vulnerabilities.
-# The results from basing off of alpine are a smaller (by 47%) and faster (by 17%) image.
-# Even with bash installed.     -Corbe
 FROM alpine:latest
 
 # Environment variables
@@ -20,6 +17,7 @@ RUN apk update \
     && mkdir /papermc/plugins
 
 COPY server.properties /papermc
+COPY bukkit.yml /papermc
 
 # Add plugins
 ADD https://github.com/EssentialsX/Essentials/releases/download/2.21.2/EssentialsX-2.21.2.jar /papermc/plugins/EssentialsX.jar
@@ -28,8 +26,8 @@ ADD https://www.patreon.com/file?h=145853143&m=580728422 /papermc/plugins/CorePr
 ADD https://hangarcdn.papermc.io/plugins/EngineHub/WorldEdit/versions/7.3.17/PAPER/worldedit-bukkit-7.3.17.jar /papermc/plugins/WorldEdit.jar
 ADD https://hangarcdn.papermc.io/plugins/ViaVersion/ViaVersion/versions/5.6.0/PAPER/ViaVersion-5.6.0.jar /papermc/plugins/ViaVersion.jar
 ADD https://hangarcdn.papermc.io/plugins/Multiverse/Multiverse-Core/versions/5.4.0/PAPER/multiverse-core-5.4.0.jar /papermc/plugins/multiverse-core.jar
-ADD https://hangarcdn.papermc.io/plugins/Multiverse/Multiverse-Portals/versions/5.1.1/PAPER/multiverse-portals-5.1.1.jar /papermc/plugins/multiverse-portals.jar
 ADD https://hangarcdn.papermc.io/plugins/Oliver/FancyNpcs/versions/2.8.0/PAPER/FancyNpcs-2.8.0.jar /papermc/plugins/FancyNpcs.jar
+ADD https://dev.bukkit.org/projects/worldguard/files/6643567/download /papermc/plugins/WorldGuard.jar
 
 # Start script
 CMD ["bash", "./papermc.sh"]

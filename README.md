@@ -1,7 +1,16 @@
 # Running
 
+## Build image
+
 ```docker build -t papermc .```
-```docker container run -it -e EULA="true" -p 25565:25565 papermc```
+
+## Create directory for saving world data
+
+```mkdir data```
+
+## Launch the container
+
+```docker container run -it -v $PWD/world:/papermc/world -e EULA="true" -p 25565:25565 papermc```
 
 # Old docs from the original repo
 
@@ -86,7 +95,3 @@ From this point, the server should be configured in the same way as any other Mi
 This project *does **NOT** redistribute the Minecraft server files*. Instead, the (very small) script that is inside of the image, `papermc.sh`, downloads these files from their official sources during installation.
 
 **PLEASE NOTE:** This is an unofficial project. I did not create PaperMC. [This is the official PaperMC website.](https://papermc.io/)
-
-## Project Pages
-- [GitHub page](https://github.com/Phyremaster/papermc-docker).
-- [Docker Hub page](https://hub.docker.com/r/phyremaster/papermc).

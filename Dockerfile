@@ -24,6 +24,10 @@ ADD https://github.com/EssentialsX/Essentials/releases/download/2.21.2/Essential
 ADD https://download.luckperms.net/1610/bukkit/loader/LuckPerms-Bukkit-5.5.21.jar /papermc/plugins/LuckPerms.jar
 ADD https://www.patreon.com/file?h=145853143&m=580728422 /papermc/plugins/CoreProtect.jar
 ADD https://hangarcdn.papermc.io/plugins/EngineHub/WorldEdit/versions/7.3.17/PAPER/worldedit-bukkit-7.3.17.jar /papermc/plugins/WorldEdit.jar
+ADD https://hangarcdn.papermc.io/plugins/ViaVersion/ViaVersion/versions/5.6.0/PAPER/ViaVersion-5.6.0.jar /papermc/plugins/ViaVersion.jar
+ADD https://hangarcdn.papermc.io/plugins/Multiverse/Multiverse-Core/versions/5.4.0/PAPER/multiverse-core-5.4.0.jar /papermc/plugins/multiverse-core.jar
+ADD https://hangarcdn.papermc.io/plugins/Multiverse/Multiverse-Portals/versions/5.1.1/PAPER/multiverse-portals-5.1.1.jar /papermc/plugins/multiverse-portals.jar
+ADD https://hangarcdn.papermc.io/plugins/Oliver/FancyNpcs/versions/2.8.0/PAPER/FancyNpcs-2.8.0.jar /papermc/plugins/FancyNpcs.jar
 
 # Start script
 CMD ["bash", "./papermc.sh"]

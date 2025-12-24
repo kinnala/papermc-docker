@@ -6,7 +6,7 @@
 
 ## Launch the container
 
-```docker container run -it -v $PWD/worlds:/papermc/worlds -e EULA="true" -p 25565:25565 papermc```
+```docker container run -it -v $PWD/worlds:/papermc/worlds -v $PWD/plugins:/papermc/plugins -e EULA="true" -p 25565:25565 papermc```
 
 # Old docs from the original repo
 

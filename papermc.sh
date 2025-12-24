@@ -3,6 +3,9 @@
 # Enter server directory
 cd papermc
 
+# Copy plugins
+cp temp/* plugins/
+
 # Set nullstrings back to 'latest'
 : ${MC_VERSION:='latest'}
 

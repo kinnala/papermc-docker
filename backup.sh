@@ -1,5 +1,4 @@
-#!/usr/bin/env bash
-set -euo pipefail
+#!/bin/bash
 
 # Create a new directory named with the current date and time
 backup_dir="$(date '+%Y-%m-%d_%H-%M-%S')"

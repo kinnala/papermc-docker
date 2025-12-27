@@ -3,7 +3,7 @@ FROM alpine:latest
 # Environment variables
 ENV MC_VERSION="1.21.8" \
     EULA="false" \
-    MC_RAM="4G" \
+    MC_RAM="6G" \
     JAVA_OPTS=""
 
 COPY papermc.sh .
@@ -14,7 +14,8 @@ RUN apk update \
     && apk add curl \
     && apk add jq \
     && mkdir /papermc \
-    && mkdir /papermc/plugins
+    && mkdir /papermc/plugins \
+    && mkdir /papermc/temp
 
 COPY server.properties /papermc
 COPY bukkit.yml /papermc

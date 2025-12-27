@@ -3,7 +3,8 @@
 # Enter server directory
 cd papermc
 
-# Copy plugins
+# Remove old plugins and copy new plugins
+rm plugins/*.jar
 cp temp/* plugins/
 
 # Set nullstrings back to 'latest'

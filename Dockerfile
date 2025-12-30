@@ -30,6 +30,7 @@ ADD https://hangarcdn.papermc.io/plugins/Oliver/FancyNpcs/versions/2.8.0/PAPER/F
 ADD https://cdn.modrinth.com/data/DKY9btbd/versions/PO4MKx7e/worldguard-bukkit-7.0.14-dist.jar /papermc/temp/worldguard.jar
 ADD https://hangarcdn.papermc.io/plugins/SyntaxDevTeam/CleanerX/versions/1.5.3/PAPER/CleanerX-Paper-1.5.3-all.jar /papermc/temp/cleanerx.jar
 ADD https://github.com/A5H73Y/Parkour/releases/download/Parkour-7.2.5-RELEASE.131/Parkour-7.2.5-RELEASE.jar /papermc/temp/parkour.jar
+ADD https://cdn.modrinth.com/data/qvdtDX3s/versions/YgwE3Cbi/multiverse-inventories-5.3.0.jar /papermc/temp/multiverse-inventories.jar
 
 # Start script
 CMD ["bash", "./papermc.sh"]

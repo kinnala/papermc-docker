@@ -31,6 +31,9 @@ ADD https://cdn.modrinth.com/data/DKY9btbd/versions/PO4MKx7e/worldguard-bukkit-7
 ADD https://hangarcdn.papermc.io/plugins/SyntaxDevTeam/CleanerX/versions/1.5.3/PAPER/CleanerX-Paper-1.5.3-all.jar /papermc/temp/cleanerx.jar
 ADD https://github.com/A5H73Y/Parkour/releases/download/Parkour-7.2.5-RELEASE.131/Parkour-7.2.5-RELEASE.jar /papermc/temp/parkour.jar
 ADD https://cdn.modrinth.com/data/qvdtDX3s/versions/YgwE3Cbi/multiverse-inventories-5.3.0.jar /papermc/temp/multiverse-inventories.jar
+ADD https://cdn.modrinth.com/data/vtawPsTo/versions/xTnZkHQL/multiverse-netherportals-5.0.3.jar /papermc/temp/multiverse-netherportals.jar
+ADD https://cdn.modrinth.com/data/2qgyQbO1/versions/BdLUtz0O/EssentialsXChat-2.21.2.jar /papermc/temp/EssentialsXChat.jar
+ADD https://hangarcdn.papermc.io/plugins/TNE/VaultUnlocked/versions/2.17.0/PAPER/VaultUnlocked-2.17.0.jar /papermc/temp/VaultUnlocked.jar
 
 # Start script
 CMD ["bash", "./papermc.sh"]

@@ -34,6 +34,7 @@ ADD https://cdn.modrinth.com/data/qvdtDX3s/versions/YgwE3Cbi/multiverse-inventor
 ADD https://cdn.modrinth.com/data/vtawPsTo/versions/xTnZkHQL/multiverse-netherportals-5.0.3.jar /papermc/temp/multiverse-netherportals.jar
 ADD https://cdn.modrinth.com/data/2qgyQbO1/versions/BdLUtz0O/EssentialsXChat-2.21.2.jar /papermc/temp/EssentialsXChat.jar
 ADD https://hangarcdn.papermc.io/plugins/TNE/VaultUnlocked/versions/2.17.0/PAPER/VaultUnlocked-2.17.0.jar /papermc/temp/VaultUnlocked.jar
+ADD https://cdn.modrinth.com/data/GLJ7ZGMW/versions/DbExIHg5/UltraCosmetics-3.14-RELEASE.jar /papermc/temp/UltraCosmetics.jar
 
 # Start script
 CMD ["bash", "./papermc.sh"]

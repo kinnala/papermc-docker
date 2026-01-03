@@ -13,6 +13,7 @@ RUN apk update \
     && apk add bash \
     && apk add curl \
     && apk add jq \
+    && apk add zip \
     && mkdir /papermc \
     && mkdir /papermc/plugins \
     && mkdir /papermc/temp
@@ -35,6 +36,12 @@ ADD https://cdn.modrinth.com/data/vtawPsTo/versions/xTnZkHQL/multiverse-netherpo
 ADD https://cdn.modrinth.com/data/2qgyQbO1/versions/BdLUtz0O/EssentialsXChat-2.21.2.jar /papermc/temp/EssentialsXChat.jar
 ADD https://hangarcdn.papermc.io/plugins/TNE/VaultUnlocked/versions/2.17.0/PAPER/VaultUnlocked-2.17.0.jar /papermc/temp/VaultUnlocked.jar
 ADD https://cdn.modrinth.com/data/GLJ7ZGMW/versions/DbExIHg5/UltraCosmetics-3.14-RELEASE.jar /papermc/temp/UltraCosmetics.jar
+ADD https://cdn.modrinth.com/data/TsLS8Py5/versions/oiCdtX5p/SkinsRestorer.jar /papermc/temp/SkinsRestorer.jar
+
+
+# Install mcrcon
+ADD https://github.com/Tiiffi/mcrcon/releases/download/v0.7.2/mcrcon-0.7.2-linux-x86-64-static.zip /papermc/temp/mcrcon.zip
+RUN unzip /papermc/temp/mcrcon.zip
 
 # Start script
 CMD ["bash", "./papermc.sh"]

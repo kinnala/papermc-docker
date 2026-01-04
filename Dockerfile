@@ -20,6 +20,8 @@ RUN apk update \
 
 COPY server.properties /papermc
 COPY bukkit.yml /papermc
+COPY server-icon.png /papermc
+
 
 # Add plugins
 ADD https://github.com/EssentialsX/Essentials/releases/download/2.21.2/EssentialsX-2.21.2.jar /papermc/temp/EssentialsX.jar

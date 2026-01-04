@@ -31,4 +31,4 @@ def run_command():
 
 if __name__ == "__main__":
     # Run only on localhost
-    app.run(host="127.0.0.1", port=80)
+    app.run(host="127.0.0.1", port=8080)

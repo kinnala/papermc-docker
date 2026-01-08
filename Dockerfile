@@ -39,6 +39,8 @@ ADD https://cdn.modrinth.com/data/2qgyQbO1/versions/BdLUtz0O/EssentialsXChat-2.2
 ADD https://hangarcdn.papermc.io/plugins/TNE/VaultUnlocked/versions/2.17.0/PAPER/VaultUnlocked-2.17.0.jar /papermc/temp/VaultUnlocked.jar
 ADD https://cdn.modrinth.com/data/GLJ7ZGMW/versions/DbExIHg5/UltraCosmetics-3.14-RELEASE.jar /papermc/temp/UltraCosmetics.jar
 ADD https://cdn.modrinth.com/data/TsLS8Py5/versions/oiCdtX5p/SkinsRestorer.jar /papermc/temp/SkinsRestorer.jar
+ADD https://cdn.modrinth.com/data/4h4f607V/versions/lvb1Da69/BlockRegen-3.31.2.jar /papermc/temp/BlockRegen.jar
+ADD https://github.com/RMJTromp/ChatEmojis/releases/download/v2.4.2/ChatEmojis-2.4.2.jar /papermc/temp/ChatEmojis.jar
 
 
 # Install mcrcon

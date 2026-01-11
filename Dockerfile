@@ -22,6 +22,7 @@ COPY server.properties /papermc
 COPY bukkit.yml /papermc
 COPY server-icon.png /papermc
 COPY banned-ips.json /papermc
+COPY banned-players.json /papermc
 
 
 # Add plugins

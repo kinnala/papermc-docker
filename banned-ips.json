@@ -1,0 +1,16 @@
+[
+  {
+    "ip": "46.23.174.233",
+    "created": "2026-01-11 12:29:01 +0000",
+    "source": "Console",
+    "expires": "forever",
+    "reason": "Palvelimen hakkerointi."
+  },
+  {
+    "ip": "109.204.180.23",
+    "created": "2026-01-11 12:28:53 +0000",
+    "source": "Console",
+    "expires": "forever",
+    "reason": "Palvelimen hakkerointi."
+  }
+]

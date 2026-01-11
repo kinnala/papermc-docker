@@ -1,0 +1,26 @@
+[
+  {
+    "uuid": "6ff6fbc7-ec0c-402a-bc7d-dcfadde39e82",
+    "name": "Toivoz",
+    "created": "2026-01-11 15:00:07 +0000",
+    "source": "Console",
+    "expires": "forever",
+    "reason": "Serverin hakkerointi."
+  },
+  {
+    "uuid": "ee1919a9-c817-4dab-9d4f-2c1ce184c25d",
+    "name": "Toivozzi",
+    "created": "2026-01-11 15:00:25 +0000",
+    "source": "Console",
+    "expires": "forever",
+    "reason": "Serverin hakkerointi."
+  },
+  {
+    "uuid": "7ce79ee1-1b6c-48d7-990d-94523d6c859e",
+    "name": "MrTyhjyys",
+    "created": "2026-01-11 15:00:02 +0000",
+    "source": "Console",
+    "expires": "forever",
+    "reason": "Serverin hakkerointi."
+  }
+]

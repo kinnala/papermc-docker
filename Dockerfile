@@ -3,7 +3,7 @@ FROM alpine:latest
 # Environment variables
 ENV MC_VERSION="1.21.8" \
     EULA="false" \
-    MC_RAM="6G" \
+    MC_RAM="4G" \
     JAVA_OPTS=""
 
 COPY papermc.sh .
@@ -22,12 +22,11 @@ COPY server.properties /papermc
 COPY bukkit.yml /papermc
 COPY server-icon.png /papermc
 COPY banned-ips.json /papermc
-COPY banned-players.json /papermc
 
 
 # Add plugins
 ADD https://github.com/EssentialsX/Essentials/releases/download/2.21.2/EssentialsX-2.21.2.jar /papermc/temp/EssentialsX.jar
-ADD https://download.luckperms.net/1610/bukkit/loader/LuckPerms-Bukkit-5.5.21.jar /papermc/temp/LuckPerms.jar
+ADD https://download.luckperms.net/1620/bukkit/loader/LuckPerms-Bukkit-5.5.32.jar /papermc/temp/LuckPerms.jar
 ADD https://hangarcdn.papermc.io/plugins/EngineHub/WorldEdit/versions/7.3.17/PAPER/worldedit-bukkit-7.3.17.jar /papermc/temp/WorldEdit.jar
 ADD https://hangarcdn.papermc.io/plugins/ViaVersion/ViaVersion/versions/5.6.0/PAPER/ViaVersion-5.6.0.jar /papermc/temp/ViaVersion.jar
 ADD https://hangarcdn.papermc.io/plugins/Multiverse/Multiverse-Core/versions/5.4.0/PAPER/multiverse-core-5.4.0.jar /papermc/temp/multiverse-core.jar
@@ -40,14 +39,10 @@ ADD https://cdn.modrinth.com/data/vtawPsTo/versions/xTnZkHQL/multiverse-netherpo
 ADD https://cdn.modrinth.com/data/2qgyQbO1/versions/BdLUtz0O/EssentialsXChat-2.21.2.jar /papermc/temp/EssentialsXChat.jar
 ADD https://hangarcdn.papermc.io/plugins/TNE/VaultUnlocked/versions/2.17.0/PAPER/VaultUnlocked-2.17.0.jar /papermc/temp/VaultUnlocked.jar
 ADD https://cdn.modrinth.com/data/GLJ7ZGMW/versions/DbExIHg5/UltraCosmetics-3.14-RELEASE.jar /papermc/temp/UltraCosmetics.jar
-ADD https://cdn.modrinth.com/data/TsLS8Py5/versions/oiCdtX5p/SkinsRestorer.jar /papermc/temp/SkinsRestorer.jar
 ADD https://cdn.modrinth.com/data/4h4f607V/versions/lvb1Da69/BlockRegen-3.31.2.jar /papermc/temp/BlockRegen.jar
 ADD https://github.com/RMJTromp/ChatEmojis/releases/download/v2.4.2/ChatEmojis-2.4.2.jar /papermc/temp/ChatEmojis.jar
+COPY Shopkeepers-2.26.0.jar /papermc/temp/Shopkeepers.jar
 
-
-# Install mcrcon
-ADD https://github.com/Tiiffi/mcrcon/releases/download/v0.7.2/mcrcon-0.7.2-linux-x86-64-static.zip /papermc/temp/mcrcon.zip
-RUN unzip /papermc/temp/mcrcon.zip
 
 # Start script
 CMD ["bash", "./papermc.sh"]
